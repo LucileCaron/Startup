@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTA - Accueil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <img src="images/logo.png" alt="NOTA Logo">
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="classement.html">Classement</a></li>
+                <li><a href="sorties.html">Sorties</a></li>
+                <li><a href="interview.html">Interview</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="featured-article">
+        <div class="background-image">
+            <img src="images/twigs.jpg" alt="FKA twigs Album">
+        </div>
+        <div class="article-info">
+            <h1>FKA twigs revient avec son album EUSEXUA</h1>
+            <p>Fusionne des sonorités dance des années 2000 et des influences R&B et Pop</p>
+        </div>
+    </section>
+
+    <section class="news-section">
+        <h2>News</h2>
+        <div class="musical-divider"></div>
+    </section>
+
+    <section class="articles-section">
+        <div class="articles-grid">
+            
+            <div class="article">
+                <img src="images/twigs.jpg" alt="FKA twigs">
+                <div class="article-content">
+                    <h3>FKA twigs revient avec son album EUSEXUA</h3>
+                    <p>FKA twigs fusionne des sonorités dance des années 2000 et des influences R&B et Pop</p>
+                </div>
+            </div>
+            
+            <div class="article">
+                <img src="images/coldplay.jpg" alt="Coldplay en Inde">
+                <div class="article-content">
+                    <h3>Coldplay en Inde</h3>
+                    <p>Les concerts de Coldplay prévus en Inde en janvier 2025 ont suscité un engouement massif, avec 13 millions de personnes tentant d'acheter 150 000 billets, provoquant le crash de la plateforme de vente. Les billets, initialement vendus entre 22 et 380 euros, ont rapidement été revendus sur le marché noir à des prix exorbitants</p>
+                </div>
+            </div>
+            
+            <div class="article">
+                <img src="images/marine.jpg" alt="Star Academy">
+                <div class="article-content">
+                    <h3>Saison 12 de la Star Academy</h3>
+                    <p>La gagnante de la saison 12, s'est confiée sur son premier album et le succès de son titre Ma faute</p>
+                </div>
+            </div>
+            
+            <div class="article">
+                <img src="images/dualipa.jpg" alt="Radical Optimism">
+                <div class="article-content">
+                    <h3>Radical Optimism</h3>
+                    <p>Son dernier album a franchi le cap des 100 000 ventes en France, porté par les tubes Houdini et Training Season</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="classement-section">
+    <h2>Classement</h2>
+    <div class="musical-divider"></div>
+
+    <div class="classement-list">
+        <div class="classement-item">
+            <span class="position">1</span>
+            <div class="classement-info">
+                <h3>Alibi</h3>
+                <p>Sevdaliza / Pablo Vittar / Yseult</p>
+            </div>
+            <img src="images/alibi.jpg" alt="Alibi" class="album-cover">
+            <button class="play-button" onclick="toggleAudio('alibi', this)" data-playing="false">
+                <img src="images/play.png" alt="Play">
+            </button>
+            <audio id="alibi" src="audio/alibi.mp3"></audio>
+        </div>
+
+        <div class="classement-item">
+            <span class="position">2</span>
+            <div class="classement-info">
+                <h3>Vivo Por Ella</h3>
+                <p>Andrea Bocelli / Karol G</p>
+            </div>
+            <img src="images/vivoporella.jpg" alt="Vivo Por Ella" class="album-cover">
+            <button class="play-button" onclick="toggleAudio('vivoporella', this)" data-playing="false">
+                <img src="images/play.png" alt="Play">
+            </button>
+            <audio id="vivoporella" src="audio/vivoporella.mp3"></audio>
+        </div>
+
+        <div class="classement-item">
+            <span class="position">3</span>
+            <div class="classement-info">
+                <h3>We Pray</h3>
+                <p>Coldplay / Little Simz / Burna Boy / Elyanna & Tini</p>
+            </div>
+            <img src="images/wepray.jpg" alt="We Pray" class="album-cover">
+            <button class="play-button" onclick="toggleAudio('wepray', this)" data-playing="false">
+                <img src="images/play.png" alt="Play">
+            </button>
+            <audio id="wepray" src="audio/wepray.mp3"></audio>
+        </div>
+
+        <div class="classement-item">
+            <span class="position">4</span>
+            <div class="classement-info">
+                <h3>Carry You Home</h3>
+                <p>Alex Warren / Ella Henderson</p>
+            </div>
+            <img src="images/carryyouhome.jpg" alt="Carry You Home" class="album-cover">
+            <button class="play-button" onclick="toggleAudio('carryyouhome', this)" data-playing="false">
+                <img src="images/play.png" alt="Play">
+            </button>
+            <audio id="carryyouhome" src="audio/carryyouhome.mp3"></audio>
+        </div>
+
+        <div class="classement-item">
+            <span class="position">5</span>
+            <div class="classement-info">
+                <h3>Nightcall</h3>
+                <p>Kavinsky / Angèle / Phoenix</p>
+            </div>
+            <img src="images/nightcall.jpg" alt="Nightcall" class="album-cover">
+            <button class="play-button" onclick="toggleAudio('nightcall', this)" data-playing="false">
+                <img src="images/play.png" alt="Play">
+            </button>
+            <audio id="nightcall" src="audio/nightcall.mp3"></audio>
+        </div>
+
+</section>
+
+<section class="sorties-section">
+    <h2>Sorties</h2>
+    <div class="musical-divider"></div>
+
+    <div class="sorties-container">
+        <div class="sorties-column">
+            <h3>Janvier 2025 :</h3>
+            <ul>
+                <li>Recycled J : Album "San Jorge" sortira le 31 janvier, comprenant 30 titres répartis sur deux disques, avec des collaborations notables telles que KHEA, Aleesha, Maikel Delacalle et Soge Culebra.</li>
+                <li>Lil Baby : Album "WHAM" sorti le 3 janvier.</li>
+                <li>Bad Bunny : Album "Debi Tirar Más Fotos" sorti le 5 janvier.</li>
+                <li>Ethel Cain : Album "Perverts" sorti le 8 janvier.</li>
+                <li>Franz Ferdinand : Album "The Human Fear" sorti le 10 janvier.</li>
+            </ul>
+
+            <h3>Février 2025 :</h3>
+            <ul>
+                <li>Dream Theater : Album "Parasomnia" prévu pour le 7 février.</li>
+                <li>FKA Twigs : Album "Eusexua" prévu pour le 24 janvier.</li>
+                <li>Central Cee : Album "Can't Rush Greatness" prévu pour le 24 janvier.</li>
+                <li>Alessia Cara : Album "Love & Hyperbole" prévu pour le 14 février.</li>
+                <li>Bartees Strange : Album "Horror" prévu pour le 14 février.</li>
+            </ul>
+
+            <h3>Mars 2025 :</h3>
+            <ul>
+                <li>Lady Gaga : Album "Mayhem Pop" prévu pour le 7 mars.</li>
+                <li>Jethro Tull : Album "Curious Ruminant" prévu pour le 7 mars.</li>
+                <li>Sasami : Album "Blood on the Silver Screen" prévu pour le 7 mars.</li>
+                <li>Coheed and Cambria : Album "Vaxis – Act III: The Father of Make Believe" prévu pour le 14 mars.</li>
+                <li>Greentea Peng : Album "Tell Dem It's Sunny" prévu pour le 21 mars.</li>
+            </ul>
+        </div>
+
+        <div class="sorties-column">
+            <h3>Avril 2025 :</h3>
+            <ul>
+                <li>Bleed from Within : Album "Zenith" prévu pour le 4 avril.</li>
+                <li>Dirty Projectors and Stargaze : Album "Song of the Earth" prévu pour le 4 avril.</li>
+                <li>Djo : Album "The Crux" prévu pour le 4 avril.</li>
+                <li>Florist : Album "Jellywish" prévu pour le 4 avril.</li>
+                <li>Jon Pardi : Album "Honkytonk Hollywood" prévu pour le 11 avril.</li>
+            </ul>
+
+            <h3>Mai 2025 :</h3>
+            <ul>
+                <li>The Amazons : Album "21st Century Fiction" prévu pour le 9 mai.</li>
+                <li>Spacey Jane : Album "If That Makes Sense" prévu pour le 9 mai.</li>
+                <li>Bury Tomorrow : Album "Will You Haunt Me, with That Same Patience" prévu pour le 16 mai.</li>
+                <li>Peter Doherty : Album "Felt Better Alive" prévu pour le 16 mai.</li>
+                <li>Lana Del Rey : Album "The Right Person Will Stay" prévu pour le 21 mai.</li>
+            </ul>
+
+            <h3>Juin 2025 :</h3>
+            <ul>
+                <li>The Doobie Brothers : Album "Walk This Road" prévu pour le 6 juin.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="interviews-section">
+    <h2>Interviews</h2>
+    <div class="musical-divider"></div>
+
+    <div class="interview-box nobody">
+        <h3>Nobodylikesbirdie</h3>
+        <img src="images/nobody.jpg" alt="Nobodylikesbirdie">
+        <p>
+            Rappeur lillois d'origine modeste, explore dans sa musique un univers qu'il qualifie de "dope boy blues".
+            Influencé par son parcours personnel, marqué par une descente dans la précarité à l'adolescence, il raconte
+            une réalité brute avec un style à la fois spontané et lucide.
+        </p>
+        <p>
+            Issu d'une famille de musiciens classiques, Birdie a pourtant trouvé sa voix dans le rap, un genre qu’il perçoit 
+            comme plus connecté à son environnement social et à son vécu. Son dernier EP, <i>The Birdie Tale II</i>, reflète 
+            une palette musicale variée, intégrant des sonorités boom bap et West Coast tout en restant ancré dans une écriture 
+            très personnelle.
+        </p>
+        <p>
+            Il aborde aussi des thèmes profonds comme la lutte des classes, les inégalités sociales et les violences policières, 
+            tout en exprimant une forte conscience politique. Fier de son identité juive, il critique également l’antisémitisme 
+            dans le rap et milite pour une représentation équilibrée et inclusive des minorités.
+        </p>
+        <p>
+            Enfin, l’artiste met en avant l’importance de la spontanéité et de l’authenticité dans sa musique, 
+            tout en reconnaissant les défis liés à sa position dans le milieu rap actuel.
+        </p>
+    </div>
+
+    <div class="interview-box angele">
+        <h3>Angèle</h3>
+        <img src="images/angele.png" alt="Angèle">
+        <p>
+            À 28 ans, Angèle est devenue une figure majeure de la pop internationale tout en restant fidèle à ses valeurs et 
+            à sa simplicité. Artiste complète, elle a marqué les esprits avec ses albums <i>Brol</i> et <i>Nonante-cinq</i>, 
+            des concerts mémorables, un documentaire sur Netflix, et des apparitions au Met Gala et à Coachella. 
+            Sa prestation à la cérémonie de clôture des JO de Paris 2024 a confirmé son statut d’icône mondiale.
+        </p>
+        <p>
+            Malgré son succès, elle conserve une grande proximité avec ses fans, partageant ses doutes et sa vision engagée 
+            de la vie. Angèle évoque son besoin de prendre son temps dans un monde où tout va très vite, ainsi que son 
+            cheminement vers une légitimité artistique. Elle confie également sa vision de son métier, où l’envie de plaire 
+            à tout le monde peuvent peser sur son authenticité.
+        </p>
+        <p>
+            Féministe et engagée, Angèle continue de défendre des messages à travers ses chansons comme <i>Balance ton quoi</i> 
+            et <i>Ta Reine</i>, qui abordent des sujets de société cruciaux. Sa collaboration avec Dua Lipa sur 
+            <i>Fever</i> lui a ouvert les portes du public international.
+        </p>
+        <p>
+            Angèle met un point d’honneur à rester sincère et vulnérable dans tout ce qu’elle fait, que ce soit en musique, 
+            dans ses clips ou même dans ses expériences hors de sa zone de confort, comme la danse contemporaine et le cinéma. 
+            L’artiste, consciente de ses hauts et de ses bas, souhaite transmettre un message d’espoir et d’émancipation à tous 
+            ceux qui la suivent, une icône accessible et inspirante.
+        </p>
+    </div>
+
+<div class="typeform-container">
+    <iframe src="https://x96fve98taf.typeform.com/to/VX2UeqqL" frameborder="0"></iframe>
+</div>
+
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <p class="footer-title">ACCUEIL</p>
+        <input type="text" class="search-box" placeholder="🔍 Rechercher">
+        
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/lucile-caron-a231bb1b4/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        </div>
+        
+        <p class="footer-text"><i>Copyrights 2024 - NOTA — <a href="#">Conditions générales</a> — Contact : <a href="mailto:NOTA.devoir@gmail.com">NOTA.devoir@gmail.com</a></i></p>
+    </div>
+</footer>
+
+<script>
+    let currentAudio = null;
+    let currentButton = null;
+
+    function toggleAudio(id, button) {
+        let audio = document.getElementById(id);
+        let isPlaying = button.getAttribute("data-playing") === "true";
+
+        if (currentAudio && currentAudio !== audio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+            currentButton.setAttribute("data-playing", "false");
+            currentButton.querySelector("img").src = "images/play.png";
+        }
+
+        if (isPlaying) {
+            audio.pause();
+            button.setAttribute("data-playing", "false");
+            button.querySelector("img").src = "images/play.png";
+        } else {
+            audio.play();
+            button.setAttribute("data-playing", "true");
+            button.querySelector("img").src = "images/pause.png";
+        }
+
+        currentAudio = audio;
+        currentButton = button;
+    }
+</script>
+
+</body>
+</html>

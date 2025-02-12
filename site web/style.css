@@ -1,0 +1,489 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); 
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.main-header .logo img {
+    height: 50px;
+}
+
+.main-header .navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; 
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end; 
+    padding-right: 26px;
+}
+
+.main-header .navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-header .navigation ul li a:hover {
+    color: #ffcc00; 
+}
+
+.featured-article {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+}
+
+.featured-article .background-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.featured-article .article-info {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.featured-article .article-info h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.featured-article .article-info p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+}
+
+.news-section {
+    text-align: center;
+    background-color: #000;
+    color: white;
+    padding: 50px 20px;
+}
+
+.news-section h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    margin: 0 0 20px;
+    text-transform: none;
+}
+
+.classement-section h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.news-section .musical-divider {
+    width: 80%;
+    height: 5px;
+    margin: 0 auto;
+    background-image: url('images/notes.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+.articles-section {
+    background-color: #000;
+    color: white;
+    padding: 20px 20px; 
+    text-align: center;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.article {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.article h3 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+}
+
+.article p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Section Classement */
+.classement-section {
+    text-align: center;
+    background-color: #000;
+    color: white;
+    padding: 50px 20px;
+}
+
+.classement-section h2::before,
+.sorties-section h2::before, 
+.interviews-section h2::before {
+    content: "";
+    display: block;
+    width: 80%; 
+    height: 3px; 
+    background-color: white; 
+    margin: 0 auto 10px; 
+}
+
+
+.classement-section .musical-divider {
+    width: 80%;
+    height: 5px;
+    margin: 0 auto 30px;
+    background-image: url('images/notes.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+.classement-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.classement-item {
+    display: flex;
+    align-items: center;
+    background: #111;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+
+.classement-item .position {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    margin-right: 15px;
+}
+
+.classement-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.album-cover {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.play-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.play-button img {
+    width: 40px;
+    height: 40px;
+}
+
+.play-button:hover {
+    transform: scale(1.1);
+}
+
+.sorties-section {
+    text-align: center;
+    background-color: #000;
+    color: white;
+    padding: 50px 20px;
+}
+
+.sorties-section h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sorties-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sorties-column {
+    width: 48%; 
+    text-align: left;
+}
+
+.sorties-column h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.sorties-column ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.sorties-column ul li {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.interviews-section {
+    text-align: center;
+    background-color: #000;
+    color: white;
+    padding: 50px 20px;
+}
+
+.interviews-section h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.interview-box {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    border: 1px solid #888;
+    padding: 30px;
+}
+
+.interview-box h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.interview-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.interview-box img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.interview-box.nobody img {
+    float: right;
+    margin-left: 15px;
+}
+
+.interview-box.angele img {
+    float: left;
+    margin-right: 15px;
+}
+
+.typeform-container {
+    width: 100%;
+    max-width: 800px; 
+    margin: 50px auto; 
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.typeform-container iframe {
+    width: 100%;
+    height: 500px; 
+    border-radius: 10px;
+    border: none;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.footer-title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.search-box {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.search-box::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-text {
+    font-style: italic;
+}
+
+.footer-text a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-text a:hover {
+    color: #ffcc00;
+}
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    font-size: 0.9rem;
+    text-align: left;
+    width: 100%;
+    position: relative; 
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.footer-title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.search-box {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.search-box::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-text {
+    font-style: italic;
+}
+
+.footer-text a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-text a:hover {
+    color: #ffcc00;
+}
+
+@media (max-width: 760px) {
+    .container {
+        width: 600px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 400px;
+    }
+}
+
